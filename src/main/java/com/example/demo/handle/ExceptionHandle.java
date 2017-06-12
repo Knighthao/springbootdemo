@@ -21,7 +21,7 @@ public class ExceptionHandle {
         if(ex instanceof  MyException)
         {
             MyException my=(MyException)ex;
-            return ResultUtil.error(((MyException) ex).getCode(),((MyException) ex).getMsg());
+            return ResultUtil.error(((MyException) ex).getCode(),((MyException) ex).getMessage());
         }
         else
         {
