@@ -114,5 +114,9 @@ public class GirlController {
     @GetMapping("girl/getAge/{id}")
     public void getAge(@PathVariable(value = "id") Integer id) throws Exception {
         bb.getAge(id);
+        dao.findAll();
+        dao.findOne(1);
+        dao.count();
+        dao.exists(1);
     }
 }
